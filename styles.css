@@ -180,6 +180,10 @@ header h1 {
   width: 50%;
 }
 
+/* .product__image-checkout {
+  opacity: 0.2;
+} */
+
 .product__image-checkout div > * {
   width: 100%;
 }

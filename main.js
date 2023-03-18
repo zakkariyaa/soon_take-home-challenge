@@ -10,14 +10,15 @@ const basketIcon = document.querySelector('.basket');
 
 // ------------------------------
 // product section
+// prettier-ignore
 updateItemCount(
   [addToBasketBtn, plusBtn],
-  ['add', basketNumber, itemCountEl, plusBtn, minusBtn, addToBasketBtn]
+  ['add', 'product', basketNumber, itemCountEl, plusBtn, minusBtn, addToBasketBtn]
 );
-
+// prettier-ignore
 updateItemCount(
   [minusBtn],
-  ['remove', basketNumber, itemCountEl, plusBtn, minusBtn, addToBasketBtn]
+  ['remove', 'product', basketNumber, itemCountEl, plusBtn, minusBtn, addToBasketBtn]
 );
 
 // ------------------------------
