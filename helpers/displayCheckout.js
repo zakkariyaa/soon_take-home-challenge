@@ -31,13 +31,15 @@ export function displayCheckout() {
   const plusBtn = document.querySelector('.plus__btn');
   const checkoutBtn = document.querySelector('.checkout__btn');
 
+  // prettier-ignore
   updateItemCount(
     [plusBtn],
-    ['add', basketNumber, itemCountEl, plusBtn, minusBtn, checkoutBtn]
+    ['add', 'checkout', basketNumber, itemCountEl, plusBtn, minusBtn, checkoutBtn]
   );
 
+  // prettier-ignore
   updateItemCount(
     [minusBtn],
-    ['remove', basketNumber, itemCountEl, plusBtn, minusBtn, checkoutBtn]
+    ['remove', 'checkout', basketNumber, itemCountEl, plusBtn, minusBtn, checkoutBtn]
   );
 }
