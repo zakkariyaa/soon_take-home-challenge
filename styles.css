@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------ */
+/* primitive styles */
+.center {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.stack-xl > * + * {
+  margin-top: 4rem;
+}
+
+.stack-m > * + * {
+  margin-top: 1.5rem;
+}
+
+.stack-s > * + * {
+  margin-top: 0.5rem;
+}
+
+.gap-m {
+  gap: 1rem;
+}
+
+/* --------------------- */
+/* Header */
+header {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #b5b4b4;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #000;
+}
+
+.soon__span {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.basket {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.item__count {
+  padding: 0.3rem 0.6rem;
+  border-radius: 100%;
+}
+
+/* --------------------- */
+/* product section */
+.product__section .name {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.product__section .description {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.product__section img {
+  width: 37rem;
+}
+
+.product__section .price,
+.product__subtotal-checkout p:last-of-type,
+.product__calculation-checkout div p:last-of-type {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.product__section .stock__level,
+.product__subtotal-checkout p:first-of-type,
+.product__image-checkout > p,
+.product__calculation-checkout div p:first-of-type {
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.75rem;
+  letter-spacing: 1.5px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.product__section .stock__level {
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.product__section .item__basket {
+  margin-top: 1rem;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.minus__btn,
+.plus__btn {
+  font-size: 1.3rem;
+  color: #3f51b5;
+  border: 1px solid #3f51b5;
+  border-radius: 50%;
+  padding: 0.1rem 0.2rem;
+  cursor: pointer;
+}
+
+.item__basket .basket__number {
+  font-size: 1.3rem;
+}
+
+.product__section .add__btn,
+.product__checkout .checkout__btn {
+  padding: 0.6rem 1rem;
+  border-radius: 3rem;
+  border: none;
+
+  font-size: 0.88rem;
+  letter-spacing: 0.75px;
+  line-height: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.product__section .add__btn {
+  margin-top: 3rem;
+}
+
+/* --------------------- */
+/* checkout section */
+.product__price {
+  gap: 4rem;
+}
+
+.product__price > * {
+  width: 50%;
+}
+
+.product__image-checkout div > * {
+  width: 100%;
+}
+
+.product__image-checkout img {
+  width: 50%;
+}
+
+.product__checkout {
+  margin: 4rem 0;
+  padding-top: 2rem;
+  border-top: 1px solid #b5b4b4;
+
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.product__checkout > * {
+  width: 16%;
+}
+
+/* --------------------- */
+/* activeness classes for cascading effect  */
+.active__basket {
+  background: #fff;
+  color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+.inactive__basket {
+  background: #bfbfbf;
+  color: #fff;
+  border-color: #bfbfbf;
+}
+
+.active {
+  background: #3f51b5;
+  color: #fff;
+  border-color: #3f51b5;
+}
+
+.inactive {
+  background: #bfbfbf;
+  color: #fff;
+  border-color: #bfbfbf;
+}
+
+/* --------------------- */
+/* tablet styles */
+@media screen and (max-width: 820px) {
+  .product__section {
+    flex-wrap: wrap;
+  }
+
+  .product__checkout > * {
+    width: 25%;
+  }
+}
+
+/* mobile screen styles */
+@media screen and (max-width: 500px) {
+  .product__section img {
+    width: 20rem;
+  }
+  .product__section .name {
+    font-size: 1.3rem;
+  }
+  .product__section .description {
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+  }
+
+  .product__price {
+    flex-wrap: wrap;
+  }
+
+  .product__price > * {
+    width: 100%;
+  }
+
+  .product__checkout > * {
+    width: 50%;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONSCOUT CDN LINK -->
+    <link rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>SOON_ BasketApp</title>
+</head>
+
+<body class="center stack-xl">
+    <header class="flex justify-between">
+        <h1><span class="soon__span">SOON_</span> Basket App</h1>
+        <div class="icons">
+            <span class="basket"><i class="uil uil-shopping-basket"></i></span>
+            <span class="inactive item__count">0</span>
+        </div>
+    </header>
+
+    <!-- product page -->
+    <section class="flex gap-m product__section">
+        <div class="img">
+            <img src="./imgs/jacket.png"
+                alt="Drumming orange dry waxed cotton hooded jacket">
+        </div>
+        <div class="stack-m details">
+            <h2 class="name">Waxed Cotton Hooded Jacket</h2>
+            <p class="description">The Drumming jacket in orange is finished with a
+                water-repellent dry wax
+                treatment that creates a love-worn look. It's made in the United Kingdom
+                using
+                organic cotton ripstop
+                with a drawstring hood, underarm eyelets and buttoned flap front pockets.
+                Shoulder epaulettes add a utilitarian twist, while a fly-fronted zip and
+                snap-button closure keeps the overall look streamlined. Attach one of the
+                collection's padded liners to the internal tab on cooler days.
+            </p>
+            <p class="price">£650.00</p>
+            <p class="stock__level">10 in stock</p>
+
+            <div class="flex item__basket">
+                <span class="minus__btn"><i class="uil uil-minus"></i></span>
+                <span class="basket__number">0</span>
+                <span class="plus__btn"><i class="uil uil-plus"></i></span>
+            </div>
+
+            <button class="active add__btn">Add to basket</button>
+        </div>
+    </section>
+
+    <!-- checkout page -->
+    <template id="checkout__template">
+        <section class="checkout__section">
+
+            <div class="flex product__price">
+                <div class="stack-m product__image-checkout">
+                    <p>product</p>
+                    <div class="flex">
+                        <p>Waxed Cotton Hooded Jacket</p>
+                        <img src="./imgs/jacket.png"
+                            alt="Drumming orange dry waxed cotton hooded jacket">
+                    </div>
+                </div>
+
+                <div class="flex justify-between product__calculation-checkout">
+                    <div class="stack-m">
+                        <p>price</p>
+                        <p>£650.00</p>
+                    </div>
+
+                    <div class="stack-m">
+                        <p>quantity</p>
+                        <div class="flex gap-m item__basket">
+                            <span class="minus__btn"><i class="uil uil-minus"></i></span>
+                            <span class="basket__number">0</span>
+                            <span class="plus__btn"><i class="uil uil-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="stack-m">
+                        <p>total</p>
+                        <p class="total">£650.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex stack-m product__checkout">
+                <div class="stack-s product__subtotal-checkout">
+                    <p>subtotal</p>
+                    <p class="subtotal">£650.00</p>
+                </div>
+                <button class="active checkout__btn">go to checkout</button>
+            </div>
+        </section>
+    </template>
+
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
