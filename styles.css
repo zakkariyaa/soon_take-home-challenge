@@ -84,6 +84,8 @@ header h1 {
 .basket {
   font-size: 1.3rem;
   cursor: pointer;
+  background: transparent;
+  border: none;
 }
 
 .item__count {

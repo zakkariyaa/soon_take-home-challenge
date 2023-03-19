@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple shopping basket app.">
+
     <!-- ICONSCOUT CDN LINK -->
     <link rel="stylesheet"
         href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -17,7 +19,8 @@
     <header class="flex justify-between">
         <h1><span class="soon__span">SOON_</span> Basket App</h1>
         <div class="icons">
-            <span class="basket"><i class="uil uil-shopping-basket"></i></span>
+            <button aria-label="Click to view the checkout page" class="basket"><i
+                    class="uil uil-shopping-basket"></i></button>
             <span class="inactive item__count">0</span>
         </div>
     </header>
@@ -44,9 +47,11 @@
             <p class="stock__level">10 in stock</p>
 
             <div class="flex item__basket">
-                <span class="minus__btn"><i class="uil uil-minus"></i></span>
+                <button aria-label="add item to basket" class="minus__btn"><i
+                        class="uil uil-minus"></i></button>
                 <span class="basket__number">0</span>
-                <span class="plus__btn"><i class="uil uil-plus"></i></span>
+                <button aria-label="remove item from basket" class="plus__btn"><i
+                        class="uil uil-plus"></i></button>
             </div>
 
             <button class="active add__btn">Add to basket</button>
@@ -76,9 +81,11 @@
                     <div class="stack-m">
                         <p>quantity</p>
                         <div class="flex gap-m item__basket">
-                            <span class="minus__btn"><i class="uil uil-minus"></i></span>
+                            <button aria-label="add item to basket" class="minus__btn"><i
+                                    class="uil uil-minus"></i></button>
                             <span class="basket__number">0</span>
-                            <span class="plus__btn"><i class="uil uil-plus"></i></span>
+                            <button aria-label="remove item from basket"
+                                class="plus__btn"><i class="uil uil-plus"></i></button>
                         </div>
                     </div>
 
